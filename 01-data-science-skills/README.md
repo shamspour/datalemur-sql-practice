@@ -23,7 +23,7 @@ Given a table of candidates and their skills, return the candidate IDs who have 
 - `HAVING COUNT(...)` – Select only candidates with all three required skills.
 - `ORDER BY` – Sort results by candidate_id.
 
-# Solution (see solution.sql)
+## Solution ([see solution.sql](./solution.sql))
 
 ```sql
 SELECT candidate_id
