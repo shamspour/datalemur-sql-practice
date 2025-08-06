@@ -3,7 +3,7 @@
 ## Problem
 Given a table of candidates and their skills, return the candidate IDs who have **all three** of these skills: `Python`, `Tableau`, and `PostgreSQL`.
 
-## Table Example
+## Table
 
 | candidate_id | skill      |
 |--------------|------------|
@@ -16,12 +16,14 @@ Given a table of candidates and their skills, return the candidate IDs who have 
 | 345          | Python     |
 | 345          | Tableau    |
 
-## Solution (see solution.sql)
+## Key SQL Clauses Used
 
-The query:
-- Filters only the required skills.
-- Groups by candidate_id.
-- Returns only those with all three required skills.
+- `WHERE` – Filter only the required skills.
+- `GROUP BY` – Aggregate skills for each candidate.
+- `HAVING COUNT(...)` – Select only candidates with all three required skills.
+- `ORDER BY` – Sort results by candidate_id.
+
+# Solution (see solution.sql)
 
 ```sql
 SELECT candidate_id
